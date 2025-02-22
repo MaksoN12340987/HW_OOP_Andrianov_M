@@ -1,7 +1,5 @@
 def test_class_product_1(product1):
-    assert (
-        product1.name == "Samsung Galaxy S23 Ultra"
-    ), "256GB, Серый цвет, 200MP камера"
+    assert product1.name == "Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера"
     assert product1.description == "256GB, Серый цвет, 200MP камера"
     assert product1.price == 180000.0
     assert product1.quantity == 5

@@ -6,6 +6,7 @@ class Product:
     price - returns the product price
     quantity - returns the product quantity
     """
+
     name: str
     description: str
     price: int
@@ -28,6 +29,7 @@ class Category:
     product_count - returns number of products
 
     """
+
     name: str
     description: str
     products: list
