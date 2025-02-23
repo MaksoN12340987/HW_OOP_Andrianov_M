@@ -1,6 +1,6 @@
 import pytest
 
-from src.classes import Category, Product
+from HW_OOP_Andrianov_M.src.caetgory import Category, Product
 
 
 @pytest.fixture
