@@ -18,7 +18,14 @@ class Product:
         self.price = price
         self.quantity = quantity
 
-    def new_product(self, update={}):
+    @classmethod
+    def new_product(cls, update: dict):
+        result = []
         for i, key in enumerate(update):
-            self.key = update[key]
-            print(self.key)
+            result.append(update[key])
+            
+        return Product(*result)
+    
+    @property
+    def price(self):
+        pass
