@@ -15,7 +15,7 @@ class Product:
     def __init__(self, name, description, price, quantity):
         self.name = name
         self.description = description
-        self.price = price
+        self.__price = price
         self.quantity = quantity
 
     @classmethod
@@ -28,4 +28,15 @@ class Product:
     
     @property
     def price(self):
-        pass
+        return self.__price
+
+    @price.setter
+    def price(self, value):
+        if value > 0:
+            if value < self.__price:
+                if input('''Новая цена ниже, вы уверены?\nВведите "Y"(yes) или "N"(no)''').lower == "y":
+                    pass
+            else:
+                self.__price = value
+        else:
+            print("Цена не должна быть нулевая или отрицательная")

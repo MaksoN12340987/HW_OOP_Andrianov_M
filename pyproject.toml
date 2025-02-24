@@ -14,16 +14,7 @@ dependencies = []
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.group.linters.dependencies]
-isort = "^6.0.0"
-flake8 = "^7.1.2"
-mypy = "^1.15.0"
-black = "^25.1.0"
 
-
-[tool.poetry.group.testing.dependencies]
-pytest = "^8.3.4"
-pytest-cov = "^6.0.0"
 
 
 [tool.mypy]
@@ -54,3 +45,7 @@ exclude = '''
 line_length = 119
 skip_glob = ["docs/*"]
 skip = [".gitignore", ".dockerignore"]
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.1.2"
+
