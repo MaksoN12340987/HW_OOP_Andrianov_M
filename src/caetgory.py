@@ -26,6 +26,9 @@ class Category:
     def add_product(self, new_item=[]):
         self.__products = [new_item]
     
-    @property.getter
+    @property
     def products(self):
-        return self.__products
+        result = ""
+        for i, key in enumerate(self.__products):
+            result += (f"{key.name}, {key.price} руб. Остаток: {key.quantity} шт.\n")
+        return result
