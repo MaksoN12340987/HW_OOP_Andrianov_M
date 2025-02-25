@@ -29,3 +29,9 @@ def test_count_category2(category2):
 def test_add_product(category1, product3):
     category1.add_product(product3)
     assert category1.products == """55" QLED 4K, 123000.0 руб. Остаток: 7 шт.\n"""
+
+
+def test_add_product_no_valid(category1, capsys):
+    category1.add_product(1)
+    captured = capsys.readouterr()
+    assert captured.out == "Объект 1 не является экземпляром класса Product\n\n"

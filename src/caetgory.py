@@ -1,4 +1,6 @@
-# Class
+from src.product import Product
+
+
 class Category:
     """Accepts 3 required properties and returns data using 3 methods
     name - returns category name
@@ -23,8 +25,11 @@ class Category:
         Category.category_count += 1
         Category.product_count += len(products)
 
-    def add_product(self, new_item=[]):
-        self.__products = [new_item]
+    def add_product(self, new_item):
+        if isinstance(new_item, Product):
+            self.__products = [new_item]
+        else:
+            print(f"Объект {new_item} не является экземпляром класса Product\n")
 
     @property
     def products(self):
