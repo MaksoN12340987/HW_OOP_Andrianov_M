@@ -1,6 +1,6 @@
 # Execution of the main block
-from src.product import Product
 from src.caetgory import Category
+from src.product import Product
 
 
 def main():

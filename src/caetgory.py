@@ -1,4 +1,4 @@
-# Class 
+# Class
 class Category:
     """Accepts 3 required properties and returns data using 3 methods
     name - returns category name
@@ -25,10 +25,10 @@ class Category:
 
     def add_product(self, new_item=[]):
         self.__products = [new_item]
-    
+
     @property
     def products(self):
         result = ""
         for i, key in enumerate(self.__products):
-            result += (f"{key.name}, {key.price} руб. Остаток: {key.quantity} шт.\n")
+            result += f"{key.name}, {key.price} руб. Остаток: {key.quantity} шт.\n"
         return result

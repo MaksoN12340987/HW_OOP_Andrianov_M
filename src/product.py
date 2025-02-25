@@ -23,9 +23,9 @@ class Product:
         result = []
         for i, key in enumerate(update):
             result.append(update[key])
-            
+
         return Product(*result)
-    
+
     @property
     def price(self):
         return self.__price
@@ -34,9 +34,12 @@ class Product:
     def price(self, value):
         if value > 0:
             if value < self.__price:
-                if input('''Новая цена ниже, вы уверены?\nВведите "Y"(yes) или "N"(no)''').lower == "y":
-                    pass
+                user = input("""Новая цена ниже, вы уверены?\nВведите "Y"(yes) или "N"(no):\n""").upper()
+                if user == "Y":
+                    self.__price = value
+                else:
+                    print(f"Значение цены {value} не сохранено.")
             else:
                 self.__price = value
         else:
-            print("Цена не должна быть нулевая или отрицательная")
+            print("""Цена не должна быть "0" или отрицательная""")
