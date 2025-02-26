@@ -22,6 +22,9 @@ python .\__main__.py
     description - возвращает описание товара
     price - возвращает цену товара
     quantity - возвращает колличество товара
+Имеет методы:
+    price - возвращяют цену товара или может записывать значения в защещённую переменную
+    new_product - возвращает экземпляр класса с обновлёнными данными
 
 - Category
 Принимает 3 обязательных свойства и возвращает данные с помощью 3х методов
@@ -31,6 +34,11 @@ python .\__main__.py
 Имеет 2 атрибута:
     category_count - вернёт колличество категорий
     product_count - вернёт колличество товаров
+Имеет методы:
+    add_product - добавляет новый список продуктов взащищённую переменную
+    products - печатает в консоль список продуктов
+
+Для классов реализованна защита данных, которые не должны быть изменены через публичный доступ, чтобы не нарушилась целостность данных
 
 
 ## Тестирование 
@@ -65,15 +73,21 @@ Accepts 4 required properties and returns data using 4 methods:
     description - returns the product description
     price - returns the product price
     quantity - returns the product quantity
+Has methods:
+    price - returns the price of the product or can write values ​​to a protected variable
+    new_product - returns a class instance with updated data
 
 - Category
 Accepts 3 required properties and returns data using 3 methods
-    name - returns category name
-    description - returns product description
-    products - returns product list
+    name - returns the name of the category
+    description - returns the description of the product
+    products - returns a list of products
 Has 2 attributes:
-    category_count - returns number of categories
-    product_count - returns number of products
+    category_count - returns the number of categories
+    product_count - returns the number of products
+Has methods:
+    add_product - adds a new list of products to a protected variable
+    products - prints a list of products to the console
 
 
 ## Testing
