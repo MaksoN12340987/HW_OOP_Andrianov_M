@@ -25,6 +25,9 @@ class Category:
         Category.category_count += 1
         Category.product_count += len(products)
 
+    def __call__(self, *args, **kwds):
+        return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт.\n"
+
     def add_product(self, new_item):
         if isinstance(new_item, Product):
             self.__products = [new_item]

@@ -18,6 +18,9 @@ class Product:
         self.__price = price
         self.quantity = quantity
 
+    def __call__(self, *args, **kwds):
+        return f"{self.name}, харрактеристики: {self.description}, {self.price} руб. Остаток: {self.quantity} шт.\n"
+
     @classmethod
     def new_product(cls, update: dict):
         result = []

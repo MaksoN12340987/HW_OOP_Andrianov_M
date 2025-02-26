@@ -40,6 +40,7 @@ def main():
     print(new_product.price)
     new_product.price = 0
     print(new_product.price)
+    print(new_product())
 
 
 if __name__ == "__main__":
