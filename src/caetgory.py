@@ -27,6 +27,12 @@ class Category:
 
     def __call__(self, *args, **kwds):
         return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт.\n"
+    
+    def __str__(self):
+        result = 0
+        for i, key in enumerate(self.__products):
+            result += key.quantity
+        return f"{self.name}, количество продуктов: {result} шт.\n"
 
     def add_product(self, new_item):
         if isinstance(new_item, Product):

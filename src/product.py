@@ -20,6 +20,9 @@ class Product:
 
     def __call__(self, *args, **kwds):
         return f"{self.name}, харрактеристики: {self.description}, {self.price} руб. Остаток: {self.quantity} шт.\n"
+    
+    def __str__(self):
+        return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт.\n"
 
     @classmethod
     def new_product(cls, update: dict):
