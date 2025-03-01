@@ -25,9 +25,12 @@ class Category:
         Category.category_count += 1
         Category.product_count += len(products)
 
-    def __call__(self, *args, **kwds):
-        return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт.\n"
-    
+    def __call__(self):
+        result = ""
+        for i, key in enumerate(self.__products):
+            result += f"{key.name}, {key.price} руб. Остаток: {key.quantity} шт.\n"
+        return result
+
     def __str__(self):
         result = 0
         for i, key in enumerate(self.__products):
