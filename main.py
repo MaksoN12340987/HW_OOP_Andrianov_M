@@ -8,6 +8,11 @@ def main():
     product2 = Product("Iphone 15", "512GB, Gray space", 210000.0, 8)
     product3 = Product("Xiaomi Redmi Note 11", "1024GB, Синий", 31000.0, 14)
 
+    print(product3)
+
+    sum_product = product1 + product2
+    print(sum_product)
+
     category1 = Category(
         "Смартфоны",
         "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни",
@@ -40,6 +45,7 @@ def main():
     print(new_product.price)
     new_product.price = 0
     print(new_product.price)
+    print(new_product())
 
 
 if __name__ == "__main__":
