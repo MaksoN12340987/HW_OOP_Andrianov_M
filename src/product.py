@@ -61,7 +61,7 @@ class Product:
 
 
 class Smartphone(Product):
-
+    
     efficiency: float
     model: str
     memory: int

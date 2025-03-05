@@ -40,6 +40,13 @@ python .\__main__.py
 
 Для классов реализованна защита данных, которые не должны быть изменены через публичный доступ, чтобы не нарушилась целостность данных
 
+#### Обновление 15.2
+В классы добавлены магические мктоды, для возможности вызова экземпляра класса, а также метод __str__ для возможности вывести на экран информацию о содежимом экземпляра.
+
+#### Обновление 16.1
+Добавлены Дочерние классы Smartphone & LawnGrass, для создания экземпляров продуктов категории "Смартфоны" и "Трава газонная"
+
+
 
 ## Тестирование 
 Для запуска тестов потребуется:
@@ -88,6 +95,12 @@ Has 2 attributes:
 Has methods:
     add_product - adds a new list of products to a protected variable
     products - prints a list of products to the console
+
+#### Update 15.2
+Magic methods have been added to classes to allow calling an instance of the class, as well as the __str__ method to display information about the contents of the instance.
+
+#### Update 16.1
+Smartphone & LawnGrass сhild Classes have been added to create instances of products in the "Smartphones" and "Lawn Grass" categories.
 
 
 ## Testing
