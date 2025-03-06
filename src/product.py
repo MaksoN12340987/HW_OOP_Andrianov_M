@@ -1,5 +1,8 @@
+from src.base_product import BaseProduct
+
+
 # Class Product
-class Product:
+class Product(BaseProduct):
     """Accepts 4 required properties and returns data using 4 methods:
     name - returns the name
     description - returns the product description
