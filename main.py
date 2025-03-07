@@ -1,5 +1,6 @@
+# from src.caetgory import Category
 from src.caetgory import Category
-from src.product import Product, LawnGrass, Smartphone
+from src.product import Product
 
 
 def main():
@@ -44,6 +45,8 @@ def main():
 
     print(Category.category_count)
     print(Category.product_count)
+
+    # Demonstration of class work 
 
 
 if __name__ == "__main__":

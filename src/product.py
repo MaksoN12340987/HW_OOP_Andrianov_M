@@ -63,7 +63,23 @@ class Product(BaseProduct):
             print("""Цена не должна быть "0" или отрицательная""")
 
 
-class Smartphone(Product):
+class MixinLog(Product):
+    name: str
+    description: str
+    price: int
+    quantity: int
+
+    def __init__(self, name, description, price, quantity):
+        super().__init__(name, description, price, quantity)
+        print(f'''  Был создан экземпляр класса {str(self.__class__)[20:-2]}
+        Входные данные:
+            Наименование: {self.name}
+            Описание: {self.description}
+            Цена: {self.price}
+            Колличество: {self.quantity}''')
+
+
+class Smartphone(MixinLog, Product):
     
     efficiency: float
     model: str
@@ -84,7 +100,7 @@ class Smartphone(Product):
             raise TypeError("Invalid type")
 
 
-class LawnGrass(Product):
+class LawnGrass(MixinLog, Product):
 
     country: str
     germination_period: str

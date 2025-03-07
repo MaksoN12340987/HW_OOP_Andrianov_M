@@ -1,6 +1,6 @@
 # Execution of the main block
 from src.caetgory import Category
-from src.product import Product, LawnGrass, Smartphone
+from src.product import LawnGrass, Smartphone
 
 
 def main():
