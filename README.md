@@ -47,6 +47,11 @@ python .\__main__.py
 Добавлены Дочерние классы Smartphone & LawnGrass, для создания экземпляров продуктов категории "Смартфоны" и "Трава газонная"
 
 
+#### Обновление 16.2
+Добавлен абстрактный класс для продуктов с абстрактными методами
+Добавлен Миксин-класс для вывода информации, при создании экземпляров класса "LawnGrass" или "Smartphone"
+
+
 
 ## Тестирование 
 Для запуска тестов потребуется:
@@ -101,6 +106,12 @@ Magic methods have been added to classes to allow calling an instance of the cla
 
 #### Update 16.1
 Smartphone & LawnGrass сhild Classes have been added to create instances of products in the "Smartphones" and "Lawn Grass" categories.
+
+
+#### Update 16.2
+Added abstract class for products with abstract methods
+Added mixin class for outputting information when creating instances of the "LawnGrass" or "Smartphone" class
+
 
 
 ## Testing
