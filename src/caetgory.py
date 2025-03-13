@@ -49,3 +49,10 @@ class Category:
         for i, key in enumerate(self.__products):
             result += f"{key.name}, {key.price} руб. Остаток: {key.quantity} шт.\n"
         return result
+
+
+    def middle_price(self):
+        try:
+            pass
+        except:
+            pass

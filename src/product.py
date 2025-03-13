@@ -19,7 +19,10 @@ class Product(BaseProduct):
         self.name = name
         self.description = description
         self.__price = price
-        self.quantity = quantity
+        if quantity and quantity != 0:
+            self.quantity = quantity
+        else:
+            raise ValueError("Товар с нулевым количеством не может быть добавлен")
 
     def __call__(self, *args, **kwds):
         return f"{self.name}, харрактеристики: {self.description}, {self.price} руб. Остаток: {self.quantity} шт.\n"
