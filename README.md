@@ -52,6 +52,10 @@ python .\__main__.py
 Добавлен Миксин-класс для вывода информации, при создании экземпляров класса "LawnGrass" или "Smartphone"
 
 
+#### Обновление 17.1
+Добавлен метод middle_price в класс Category, этот метод умее вычислять среднюю стоимость всех продуктов т возвращать результат в виде числа float
+
+
 
 ## Тестирование 
 Для запуска тестов потребуется:
@@ -111,6 +115,10 @@ Smartphone & LawnGrass сhild Classes have been added to create instances of pro
 #### Update 16.2
 Added abstract class for products with abstract methods
 Added mixin class for outputting information when creating instances of the "LawnGrass" or "Smartphone" class
+
+
+#### Update 17.1
+Added middle_price method to Category class, this method can calculate the average price of all products and return the result as a float number
 
 
 
