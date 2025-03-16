@@ -50,9 +50,13 @@ class Category:
             result += f"{key.name}, {key.price} руб. Остаток: {key.quantity} шт.\n"
         return result
 
-
     def middle_price(self):
         try:
-            pass
-        except:
-            pass
+            prices = 0
+            goods = 0
+            for i, key in enumerate(self.__products):
+                prices += key.price
+                goods += key.quantity
+            return prices / goods
+        except ZeroDivisionError:
+            return 0

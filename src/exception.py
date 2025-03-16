@@ -1,7 +1,6 @@
 # Class exeption
 
 
-
 class ShellScript(Exception):
     """Общий класс исключений"""
 
@@ -9,4 +8,4 @@ class ShellScript(Exception):
         if args:
             self.message = args[0]
         else:
-            self.message = 'Неизвестная ошибка скрипта.'
+            self.message = "Неизвестная ошибка скрипта."
